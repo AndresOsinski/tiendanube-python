@@ -17,7 +17,7 @@ Usage
 Query list of products::
 
     > api_key = 'API_KEY'
-    > from tiendanube import NubeClient
+    > from tiendanube.client import NubeClient
     > client = NubeClient(api_key)
     > store = client.get_store(1)
     > [p.name.es for p in store.products.list()]
